@@ -1,0 +1,63 @@
+body,
+body * {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  height: 100vh;
+  padding: 80px;
+}
+body > * {
+  margin: 80px;
+}
+.bulb {
+  width: 220px;
+  height: 400px;
+  background-image: url(../img/bulb.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bulb > .light {
+  width: 210px;
+  height: 210px;
+  border-radius: 100px;
+  position: relative;
+  border: none;
+  border-radius: 150px;
+  animation-name: lighting;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes lighting {
+  0% {
+    background-color: red;
+    box-shadow: 3px 5px 20px 20px #f66a6a;
+  }
+  30% {
+    background-color: red;
+    box-shadow: 3px 5px 20px 20px #f66a6a;
+  }
+  50% {
+    background-color: green;
+    box-shadow: 3px 5px 20px 20px #88f388;
+  }
+  70% {
+    background-color: green;
+    box-shadow: 3px 5px 20px 20px #88f388;
+  }
+  100% {
+    background-color: blue;
+    box-shadow: 3px 5px 20px 20px #9696f0;
+  }
+}
